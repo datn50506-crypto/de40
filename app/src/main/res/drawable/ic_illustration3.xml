@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="210dp"
+    android:viewportWidth="150"
+    android:viewportHeight="210">
+    <!-- Bright Blue Sky and Clouds -->
+    <path
+        android:fillColor="#BBDEFB"
+        android:pathData="M0,0h150v210h-150z"/>
+    <!-- Large White Clouds -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,50m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0 M70,40m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0 M120,55m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0"/>
+    <!-- Modern High-rise Campus Building Structure -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M10,80h60v130h-60z"/>
+    <path
+        android:fillColor="#CFD8DC"
+        android:pathData="M70,95h70v115h-70z"/>
+    <!-- Windows and Glass Panel Lines for Campus Building -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M15,90h8v15h-8z M27,90h8v15h-8z M39,90h8v15h-8z M51,90h8v15h-8z M15,115h8v15h-8z M27,115h8v15h-8z M39,115h8v15h-8z M51,115h8v15h-8z M15,140h8v15h-8z M27,140h8v15h-8z M39,140h8v15h-8z M51,140h8v15h-8z M15,165h8v15h-8z M27,165h8v15h-8z M39,165h8v15h-8z M51,165h8v15h-8z"/>
+    <!-- Windows for Right Block -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M78,105h12v10h-12z M95,105h12v10h-12z M112,105h12v10h-12z M78,125h12v10h-12z M95,125h12v10h-12z M112,125h12v10h-12z M78,145h12v10h-12z M95,145h12v10h-12z M112,145h12v10h-12z M78,165h12v10h-12z M95,165h12v10h-12z M112,165h12v10h-12z"/>
+    <!-- Center Statue / Monument Landmark in front of building -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M75,150l-10,40l20,0z"/>
+    <!-- Decorative Rings around monument -->
+    <path
+        android:strokeColor="#78909C"
+        android:strokeWidth="2"
+        android:pathData="M75,170m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+    <!-- Foreground Trees/Garden -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M0,195h150v15h-150z M20,195m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0 M50,195m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-8 0 M130,195m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+</vector>

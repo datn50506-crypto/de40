@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cover"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Top Header: Logo and School Name -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="School Logo"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_uneti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSchoolNameVN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TRƯỜNG ĐẠI HỌC\nKINH TẾ - KỸ THUẬT CÔNG NGHIỆP"
+        android:textColor="@color/uneti_blue"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgLogo"
+        app:layout_constraintTop_toTopOf="@id/imgLogo"
+        app:layout_constraintBottom_toTopOf="@id/txtSchoolNameEN"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/txtSchoolNameEN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSITY OF ECONOMICS - TECHNOLOGY FOR INDUSTRIES"
+        android:textColor="@color/uneti_blue"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtSchoolNameVN"
+        app:layout_constraintTop_toBottomOf="@id/txtSchoolNameVN"
+        app:layout_constraintBottom_toTopOf="@id/lineHeader" />
+
+    <!-- Thin blue line under School Name -->
+    <View
+        android:id="@+id/lineHeader"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/uneti_blue"
+        app:layout_constraintStart_toStartOf="@id/txtSchoolNameEN"
+        app:layout_constraintEnd_toEndOf="@id/txtSchoolNameEN"
+        app:layout_constraintTop_toBottomOf="@id/txtSchoolNameEN"
+        app:layout_constraintBottom_toBottomOf="@id/imgLogo" />
+
+    <!-- Department Name -->
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="KHOA ĐIỆN TỬ VÀ KỸ THUẬT MÁY TÍNH"
+        android:textColor="@color/uneti_red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <!-- Authors -->
+    <TextView
+        android:id="@+id/txtAuthors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Vũ Trung Dũng (Chủ biên)\nTrần Thu Hương, Phạm Anh Tuấn"
+        android:textColor="@color/uneti_red"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/txtDepartment" />
+
+    <!-- Translucent horizontal background band mimicking the shaded area in the photo -->
+    <View
+        android:id="@+id/viewWatermarkBg"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#16000080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardIllustration2"
+        app:layout_constraintBottom_toBottomOf="@id/cardIllustration2" />
+
+    <TextView
+        android:id="@+id/txtWatermark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNETI"
+        android:textColor="#26000080"
+        android:textSize="75sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/viewWatermarkBg"
+        app:layout_constraintBottom_toBottomOf="@id/viewWatermarkBg" />
+
+    <!-- Left Column Top Image Card (MP3 Playback) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardIllustration1"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#A0A8C8"
+        app:layout_constraintEnd_toStartOf="@id/cardIllustration3"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAuthors">
+
+        <ImageView
+            android:id="@+id/imgIllustration1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_illustration1"
+            android:scaleType="centerCrop"
+            android:contentDescription="Play MP3" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Left Column Bottom Image Card (MP4 Playback) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardIllustration2"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#A0A8C8"
+        app:layout_constraintEnd_toStartOf="@id/cardIllustration3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardIllustration1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgIllustration2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_illustration2"
+                android:scaleType="centerCrop"
+                android:contentDescription="Play MP4" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Right Column Large Image Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardIllustration3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#A0A8C8"
+        app:layout_constraintBottom_toBottomOf="@id/cardIllustration2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1.2"
+        app:layout_constraintStart_toEndOf="@id/cardIllustration1"
+        app:layout_constraintTop_toTopOf="@id/cardIllustration1">
+
+        <ImageView
+            android:id="@+id/imgIllustration3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_illustration3"
+            android:scaleType="centerCrop"
+            android:contentDescription="Illustration 3" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Document Title -->
+    <TextView
+        android:id="@+id/txtDocumentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="TÀI LIỆU HỌC TẬP\nLẬP TRÌNH DI ĐỘNG"
+        android:textColor="@color/uneti_red"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintTop_toBottomOf="@id/cardIllustration2" />
+
+    <!-- Footer Years and distribution note -->
+    <TextView
+        android:id="@+id/txtFooterYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NĂM - 2022"
+        android:textColor="@color/uneti_blue"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/txtFooterNote" />
+
+    <TextView
+        android:id="@+id/txtFooterNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LƯU HÀNH NỘI BỘ"
+        android:textColor="@color/uneti_blue"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="100dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+    <!-- Soft sky -->
+    <path
+        android:fillColor="#E1F5FE"
+        android:pathData="M0,0h120v100h-120z"/>
+    <!-- Modern architectural blocks/facades -->
+    <path
+        android:fillColor="#CFD8DC"
+        android:pathData="M5,35h40v65h-40z M50,45h65v55h-65z"/>
+    <!-- Darker sections for depth -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M20,35h15v65h-15z M70,45h20v55h-20z"/>
+    <!-- Grid of windows -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,45h4v4h-4z M16,45h4v4h-4z M24,45h4v4h-4z M8,55h4v4h-4z M16,55h4v4h-4z M24,55h4v4h-4z M55,55h5v5h-5z M65,55h5v5h-5z M75,55h5v5h-5z M55,70h5v5h-5z M65,70h5v5h-5z M75,70h5v5h-5z"/>
+    <!-- Ground/Courtyard -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M0,85h120v15h-120z"/>
+    <!-- Small trees or student figures -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M15,85m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0 M35,85m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0 M90,88m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-6 0"/>
+</vector>

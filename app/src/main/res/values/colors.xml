@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_gray">#DCDCDC</color>
+    <color name="bg_cover">#D3CFC9</color>
+    <color name="uneti_red">#C00000</color>
+    <color name="uneti_blue">#000080</color>
+    <color name="uneti_watermark">#25000080</color>
+</resources>

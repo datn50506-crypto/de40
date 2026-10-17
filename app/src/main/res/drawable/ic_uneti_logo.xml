@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Outer thick blue ring -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M100,20 C55.82,20 20,55.82 20,100 C20,144.18 55.82,180 100,180 C144.18,180 180,144.18 180,100 C180,55.82 144.18,20 100,20 Z M100,172 C59.13,172 26,138.87 26,98 C26,57.13 59.13,24 100,24 C140.87,24 174,57.13 174,98 C174,138.87 140.87,172 100,172 Z" />
+
+    <!-- Inner thin blue ring -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M100,45 C69.62,45 45,69.62 45,100 C45,130.38 69.62,155 100,155 C130.38,155 155,130.38 155,100 C155,69.62 130.38,45 100,45 Z M100,150 C72.39,150 50,127.61 50,100 C50,72.39 72.39,50 100,50 C127.61,50 150,72.39 150,100 C150,127.61 127.61,150 100,150 Z" />
+
+    <!-- Bottom blue arc fill between rings -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M100,155 C69.62,155 45,130.38 45,100 L155,100 C155,130.38 130.38,155 100,155 Z" />
+
+    <!-- Central White Shield Area with Blue Border -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000080"
+        android:strokeWidth="3"
+        android:pathData="M65,30 L135,30 L135,100 C135,119.33 119.33,135 100,135 C80.67,135 65,119.33 65,100 Z" />
+
+    <!-- UNETI Text representation -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M80,50 L85,50 L85,65 L80,65 Z M88,50 L105,50 L105,53 L88,53 Z M88,56 L100,56 L100,59 L88,59 Z M88,62 L105,62 L105,65 L88,65 Z" />
+
+    <!-- Globe representation inside shield -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M120,55 m-12,0 a12,12 0,1 1,24 0 a12,12 0,1 1,-24 0" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M108,55 L132,55 M120,43 L120,67 M111,49 Q120,55 129,49 M111,61 Q120,55 129,61" />
+
+    <!-- Center Hexagon Gear -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M100,75 L115,84 L115,102 L100,111 L85,102 L85,84 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,83 L108,88 L108,98 L100,103 L92,98 L92,88 Z" />
+
+    <!-- Connector line from gear to bottom of shield -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M97,111 h6 v24 h-6 Z" />
+
+    <!-- Registered trademark symbol -->
+    <path
+        android:fillColor="#000080"
+        android:pathData="M142,30 m-3,0 a3,3 0,1 1,6 0 a3,3 0,1 1,-6 0" />
+
+</vector>

@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="100dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+    <!-- Sky Background -->
+    <path
+        android:fillColor="#E0F7FA"
+        android:pathData="M0,0h120v100h-120z"/>
+    <!-- Sun/Light Cloud -->
+    <path
+        android:fillColor="#FFF59D"
+        android:pathData="M100,25m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+    <!-- Distant Buildings -->
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M10,40h25v60h-25z M40,30h35v70h-35z M80,50h30v50h-30z"/>
+    <!-- Foregound Building & Windows -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M5,55h50v45h-50z"/>
+    <!-- Windows -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,60h8v8h-8z M24,60h8v8h-8z M38,60h8v8h-8z M10,75h8v8h-8z M24,75h8v8h-8z M38,75h8v8h-8z"/>
+    <!-- Tree/Greenery -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M65,90m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0 M100,95m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0"/>
+</vector>

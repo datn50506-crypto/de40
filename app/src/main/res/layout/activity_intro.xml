@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cover"
+    android:padding="16dp"
+    tools:context=".IntroActivity">
+
+    <!-- Header Logo & Title -->
+    <ImageView
+        android:id="@+id/imgIntroLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="School Logo" />
+
+    <TextView
+        android:id="@+id/txtIntroSchool"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="TRƯỜNG ĐẠI HỌC\nKINH TẾ - KỸ THUẬT CÔNG NGHIỆP"
+        android:textColor="@color/uneti_blue"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgIntroLogo"
+        app:layout_constraintTop_toTopOf="@id/imgIntroLogo" />
+
+    <!-- Intro Title -->
+    <TextView
+        android:id="@+id/txtIntroTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="GIỚI THIỆU\nKHOA ĐIỆN TỬ VÀ KỸ THUẬT MÁY TÍNH"
+        android:textColor="@color/uneti_red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtIntroSchool" />
+
+    <!-- Content Description -->
+    <TextView
+        android:id="@+id/txtIntroContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Khoa Điện tử và Kỹ thuật Máy tính là một trong những khoa mũi nhọn của Trường Đại học Kinh tế - Kỹ thuật Công nghiệp (UNETI).\n\nKhoa chuyên đào tạo các ngành công nghệ chất lượng cao:\n- Công nghệ kỹ thuật điện tử - viễn thông\n- Công nghệ kỹ thuật máy tính\n- Hệ thống nhúng và IoT\n\nVới đội ngũ giảng viên giàu kinh nghiệm, tâm huyết cùng hệ thống phòng thực hành, thí nghiệm hiện đại, khoa luôn cam kết mang lại môi trường học tập lý tưởng nhất cho sinh viên, đáp ứng nhu cầu cao của cuộc Cách mạng Công nghiệp 4.0."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintTop_toBottomOf="@id/txtIntroTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnBack" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUAY LẠI BÌA CHÍNH"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/uneti_blue"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
